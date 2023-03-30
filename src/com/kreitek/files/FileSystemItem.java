@@ -2,6 +2,8 @@ package com.kreitek.files;
 
 import java.util.List;
 
+/* [Error 04 y 05] los métodos deberían dividirse en dos interfaces diferenciadas
+*   una para ficheros y otra para directorios */
 public interface FileSystemItem {
     String getName();
     void setName(String name);

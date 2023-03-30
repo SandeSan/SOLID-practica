@@ -45,13 +45,13 @@ public  class File extends FileSystemItemBase implements FileSystemItem
 ```
 ---
 
-## [Error 04]
+## [Error 04] - commit 5d06dc07523952fe6a94bc4aceb3f6d8ad524a19
 ### Principio de Segregación de Interfaz
 **“FileSystemItem”** contiene métodos que no se usan para todos los tipos de archivos. Se podrían crear dos interfaces; una para trabajar con **“Files”** y otra para **“Directory”**.
 
 ---
 
-## [Error 05]
+## [Error 05] - commit 5d06dc07523952fe6a94bc4aceb3f6d8ad524a19
 ### Principio de abierto cerrado
 Lo incumple también la interfaz **“FileSystemItem”**, por esta serie de métodos de los que hablamos en el [Error 04]. Si en el futuro añadiéramos otro método que solo sea útil para **“Directory”**, la clase **“File”** se verá obligada también a cambiar para adaptarse a la nueva funcionalidad. La solución es la misma para ambos errores; crear una interfaz para trabajar con cada clase.
 
