@@ -37,9 +37,14 @@ public class Directory extends FileSystemItemBase implements FileSystemItem {
         files.remove(file);
     }
 
+    /* UPDATE: Cambio en el método getSize que pedía el ejercicio */
     @Override
     public int getSize() {
-        throw new UnsupportedOperationException(NO_ES_VALIDO_PARA_DIRECTORIOS);
+        int totalSize = 0;
+        for (FileSystemItem item : files) {
+            totalSize += item.getSize();
+        }
+        return totalSize;
     }
 
     @Override
