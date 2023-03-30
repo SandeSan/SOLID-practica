@@ -4,6 +4,7 @@ import com.kreitek.files.error.InvalidFileFormatException;
 
 import java.util.List;
 
+/* [Error 03] Se podría crear en su lugar una clase abstracta o una interfaz */
 public  class File extends FileSystemItemBase implements FileSystemItem {
 
     private int size = 0;
