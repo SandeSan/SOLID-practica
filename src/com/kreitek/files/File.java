@@ -23,7 +23,8 @@ public  class File extends FileSystemItemBase implements FileSystemItem {
         }
         return extension;
     }
-
+/* [Error 01] Se soluciona aplicando la solución de los errores 04 y 05, al dividir las funcionalidades
+* para archivos y directorios por separado */
     @Override
     public List<FileSystemItem> listFiles() {
         throw new UnsupportedOperationException("No es válido para ficheros");
