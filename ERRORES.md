@@ -57,7 +57,7 @@ Lo incumple también la interfaz **“FileSystemItem”**, por esta serie de mé
 
 ---
 
-## [Error 06]
+## [Error 06]  - commit aa254029c30a7098ac24d6bfba00b69632f5e5e7
 ### Principio de Inversión de Dependencias
 La clase **“Directory”** depende directamente de la clase concreta **“FileSystemItemBase”** en lugar de depender de la abstracción **“FileSystemItem”**.
 

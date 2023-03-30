@@ -3,6 +3,7 @@ package com.kreitek.files;
 import java.util.ArrayList;
 import java.util.List;
 
+/* [Error 06] la clase Directory debería depender de FileSystemItem */
 public class Directory extends FileSystemItemBase implements FileSystemItem {
 
     private static final String NO_ES_VALIDO_PARA_DIRECTORIOS = "No es válido para directorios";
